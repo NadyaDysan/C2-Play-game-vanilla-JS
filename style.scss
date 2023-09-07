@@ -1,0 +1,202 @@
+@import 'vars';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: $colorBackground;
+}
+
+.center {
+    padding-left: calc(120px);
+    padding-right: calc(120px);
+}
+
+
+.top {
+    height: 1024px;
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: $colorText;
+    max-width: 789px;
+    padding-top: 217px;
+    padding-bottom: 32px;
+}
+
+.text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    color: $colorText;
+    padding-bottom: 44px;
+    max-width: 481px;
+}
+
+.go_button {
+    background: $colorGoButton;
+    border: 1px;
+    color: $colorText;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 234px;
+    height: 48px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    transition: all .5s ease;
+    cursor: pointer;
+
+    &:hover {
+        background: $colorGoButtonHover;
+        color: $colorText;
+        cursor: url(img/cursor-hand-line.svg), pointer;
+    }
+
+    &:active {
+        background: $colorGoButton;
+        color: $colorBackground;
+    }
+}
+
+.choice {
+    display: grid;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: $colorText;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    max-width: 1440px;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.game {
+    height: 300px;
+    grid-column: span 4;
+    border-radius: 16px;
+    text-decoration: none;
+    color: $colorText;
+    border-color: none;
+    transition: all .5s ease;
+    max-width: 379px;
+
+    &:hover {
+        transform: scale(1.03);
+        cursor: url(img/cursor-hand-line.svg), pointer;
+    }
+
+    &_text {
+        padding-top: 236px;
+        padding-right: 32px;
+        padding-left: 32px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+}
+
+.game:nth-of-type(1) {
+    background-image: url(img/Play1.png);
+}
+
+.game:nth-of-type(2) {
+    background-image: url(img/Play2.png);
+}
+
+.game:nth-of-type(3) {
+    background-image: url(img/Play3.png);
+}
+
+.play {
+    padding-top: 282px;
+    padding-bottom: 282px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    display: none;
+
+    &_title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: $colorText;
+    }
+
+    &_text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: $colorText;
+        padding-bottom: 44px;
+        max-width: 584px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+
+.play2_main {
+    display: contents;
+    max-width: 1440px;
+}
+
+.play3 {
+    background-image: url(./img/background_play3.png);
+    padding-top: 276px;
+    padding-bottom: 288px;
+    justify-content: space-between;
+    max-width: 1440px;
+    display: none;
+
+    &_main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &_text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: $colorText;
+        padding-bottom: 44px;
+        max-width: 1200px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        text-align: center;
+    }
+}
+
+.footer{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        color: $colorText;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
+@import 'mobile';

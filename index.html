@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top center">
+        <div class="top_main">
+            <h1 class="heading" id="top">Welcome to my site !</h1>
+            <p class="text">You have to go through several exciting games. If you're ready, press
+                <strong>go</strong> and <strong>get started</strong>
+            </p>
+            <a href="#choice"><button class="go_button" type="submit">Go!</button></a>
+        </div>
+    </div>
+    <div class="choice center" id="choice">
+        <a class="game" href="#play1">
+            <p class="game_text" onclick="view_seasons()">Game 1</p>
+        </a>
+        <a class="game" href="#play2">
+            <p class="game_text" onclick="view_words()">Game 2</p>
+        </a>
+        <a class="game" href="#play3">
+            <p class="game_text" onclick="view_riddle()">Game 3</p>
+        </a>
+    </div>
+    <div class="play center" id="play1">
+        <div class="play_text_block">
+            <h2 class="play_title">Seasons!</h2>
+            <p class="play_text">Click the play button, enter the month number (from 1 to 12) and you will find out what time
+               of year it belongs</p>
+            <button class="go_button" type="submit" onclick="seasons_game()">Play!</button>
+        </div>
+        <img class="play_img" src="img/undraw_video_game.png" alt="seasons">
+    </div>
+    <div class="play center" id="play2">
+        <div class="play2_main">
+            <img class="play_img" src="img/undraw_gaming_re_cma2 1.png" alt="words">
+            <div class="play_text_block">
+                <h2 class="play_title">Remember the words</h2>
+                <p class="play_text">When you click on the play button, you will see a few words that you need to 
+                    remember</p>
+                <button class="go_button" type="submit" onclick="words_game()">Play!</button>
+            </div>
+        </div>
+    </div>
+    <div class="play3 center" id="play3">
+        <div class="play3_main">
+            <h2 class="play_title">Riddle game</h2>
+            <p class="play3_text">The computer asks a riddle, you need to guess it, if you give the wrong answer, the computer will give you a hint. 
+                You will have three attempts and two hints.</p>
+            <button class="go_button" type="submit" onclick="riddle_game()">Play!</button>
+        </div>
+    </div>
+
+    <footer class="footer center">
+        <p class="footer_text">All rights reserved</p>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
