@@ -1,6 +1,8 @@
 # C2-Play-game-vanilla-JS
 
-Adaptive site with 3 games using .scss. 
+You can see it here: https://unhoped-for-basis.000webhostapp.com/
+
+**Adaptive site with 3 games using .scss**
 The games are made with vanilla JS and arranged from easy to hard order.
 
 **1**st game - Seasons game.
